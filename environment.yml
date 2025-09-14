@@ -1,0 +1,19 @@
+name: LLM_qattan
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - numpy
+  - pillow
+  - pytorch=1.10.2
+  - torchvision=0.11.3
+  - torchaudio=0.10.2
+  - cudatoolkit=10.2 
+  - typing_extensions
+  - setuptools
+  - wheel
+  - fastapi
+  - uvicorn
+  - requests
