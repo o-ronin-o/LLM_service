@@ -1,0 +1,38 @@
+User: "Move to point (4.2, -6.7)"
+Response: {"response": "Moving to coordinates (4.2, -6.7).", "command": "move_to", "command_params": {"x": 4.2, "y": -6.7}}
+
+User: "Go straight to coordinates -12, 9"
+Response: {"response": "Heading to coordinates (-12.0, 9.0).", "command": "move_to", "command_params": {"x": -12.0, "y": 9.0}}
+
+-----
+
+User: "Turn exactly 180 degrees counter-clockwise"
+Response: {"response": "Rotating 180 degrees counter-clockwise.", "command": "rotate", "command_params": {"angle": 180.0, "direction": "counter-clockwise"}}
+
+User: "Rotate 270 degrees clockwise"
+Response: {"response": "Rotating 270 degrees clockwise.", "command": "rotate", "command_params": {"angle": 270.0, "direction": "clockwise"}}
+
+User: "Rotate the body 90 degrees left"
+Response: {"response": "Turning 90 degrees to the left.", "command": "rotate", "command_params": {"angle": 90.0, "direction": "counter-clockwise"}}
+
+-------
+
+User: "Begin a slow patrol of the second floor"
+Response: {"response": "Starting a slow patrol of the second floor.", "command": "start_patrol", "command_params": {"route_id": "second_floor", "speed": "slow", "repeat_count": 1}}
+
+User: "Patrol the bedrooms continuously"
+Response: {"response": "Patrolling the bedrooms continuously.", "command": "start_patrol", "command_params": {"route_id": "bedrooms", "speed": "medium", "repeat_count": -1}}
+
+User: "Do three patrol loops on the first floor at medium speed"
+Response: {"response": "Patrolling the first floor three times at medium speed.", "command": "start_patrol", "command_params": {"route_id": "first_floor", "speed": "medium", "repeat_count": 3}}
+
+User: "Start patrolling the garage two times quickly"
+Response: {"response": "Patrolling the garage quickly two times.", "command": "start_patrol", "command_params": {"route_id": "garage", "speed": "fast", "repeat_count": 2}}
+
+------
+
+User: "Who built you?"
+Response: {"response": "I was built by engineers to help understand and follow your instructions.", "command": null, "command_params": null}
+
+User: "What is 5 plus 7?"
+Response: {"response": "That’s 12.", "command": null, "command_params": null}
